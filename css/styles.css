@@ -1,0 +1,205 @@
+/*-----ПЕРЕМЕННЫЕ-----*/
+
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --title-dark-theme-color: #ffffff;
+    --title-light-theme-color: #212121;
+    --text-dark-theme-color: #212121;
+    --text-light-theme-color: #ffffff;
+    --accent-color: #2196f3;
+    --desc-color: #757575;
+}
+
+/*
+Roboto 900 700 500 400
+Ralerway 700
+*/
+
+body {
+    background-color: var(--title-dark-theme-color);
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    color: var(--text-dark-theme-color);
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.list {
+    list-style: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* -----НАВИГАЦИЯ----- */
+
+.logo {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    color: #000000;
+}
+
+.navigation-list-link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--text-dark-theme-color);
+}
+.header-mail-link,
+.header-tel-link {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--desc-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-mail-link:hover,
+.header-mail-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus {
+    color: var(--accent-color);
+}
+
+/* -----HERO----- */
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;
+    letter-spacing: 0.06em;
+    /*color: var(--text-light-theme-color);*/
+}
+
+.modal-btn {
+    background-color: var(--accent-color);
+    color: var(--text-light-theme-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9em;
+    letter-spacing: 0.06em;
+}
+
+.main-section-titles {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17em;
+    color: var(--text-dark-theme-color);
+}
+
+/* -----ОСОБЕННОСТИ----- */
+
+.features-item-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark-theme-color);
+}
+
+.description {
+    line-height: 1.7em;
+    color: var(--desc-color);
+}
+
+/* -----ЧЕМ МЫ ЗАНИМАЕМСЯ-----*/
+
+.what-we-do-item-title {
+    font-weight: 700;
+    line-height: 1.7em;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--text-light-theme-color);
+}
+
+/*-----НАША КОМАНДА-----*/
+
+/*.team-card {
+    background-color: var(--title-light-theme-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+}*/
+
+.team-card-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19em;
+    color: var(--text-dark-theme-color);
+}
+
+.team-card-profession {
+    font-size: 16px;
+    line-height: 1.19em;
+    color: var(--desc-color);
+}
+
+/*-----НАШИ КЛИЕНТЫ-----*/
+
+/*-----ПОДВАЛ-----*/
+.footer {
+    background: #2f303a;
+}
+
+.footer-address-link {
+    line-height: 1.7em;
+    color: var(--text-light-theme-color);
+}
+.footer-mail-link,
+.footer-tel-link {
+    line-height: 1.7em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.social-links-title {
+    font-weight: 700;
+    color: var(--text-light-theme-color);
+}
+
+.filter-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: var(--text-dark-theme-color);
+    background: #f5f4fa;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6em;
+    background-color: var(--accent-color);
+    color: var(--text-light-theme-color);
+}
+
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2em;
+    letter-spacing: 0.06em;
+    color: var(--text-dark-theme-color);
+}
+
+.project-type {
+    font-size: 16px;
+    line-height: 1.9em;
+    color: var(--desc-color);
+}
+
+.project-description {
+    font-size: 18px;
+    line-height: 1.55em;
+    color: var(--text-light-theme-color);
+    background: var(--accent-color);
+}
