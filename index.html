@@ -13,11 +13,11 @@
     </head>
 
     <body>
-        <header class="header">
-            <div class="container">
+        <header>
+            <section class="header section container flex-wrap">
                 <!-- НАВИГАЦИЯ -->
 
-                <nav class="navigation">
+                <nav class="navigation flex-wrap">
                     <a
                         class="logo link"
                         href="index.html"
@@ -25,7 +25,7 @@
                         lang="en"
                         ><span class="accent">Web</span> Studio</a
                     >
-                    <ul class="navigation-list list">
+                    <ul class="navigation-list list flex-wrap">
                         <li class="navigation-list-item">
                             <a
                                 class="link navigation-list-link"
@@ -55,11 +55,11 @@
 
                 <!-- КОНТАКТЫ -->
 
-                <address class="header-address">
-                    <ul class="list">
+                <address class="header-address flex-wrap">
+                    <ul class="header-list list flex-wrap">
                         <li class="header-mail">
                             <a
-                                class="link header-mail-link"
+                                class="link header-mail-link flex-wrap"
                                 href="mailto:info@devstudio.com"
                                 target="_blank"
                                 ><img
@@ -71,7 +71,7 @@
                         </li>
                         <li class="header-tel">
                             <a
-                                class="link header-tel-link"
+                                class="link header-tel-link flex-wrap"
                                 href="tel:+380961111111"
                                 target="_blank"
                                 ><img
@@ -83,8 +83,10 @@
                         </li>
                     </ul>
                 </address>
-            </div>
+            </section>
+        </header>
 
+        <main class="main">
             <!-- ШАПКА -->
 
             <section class="hero">
@@ -93,20 +95,22 @@
                 </h1>
                 <button class="modal-btn" type="button">Заказать услугу</button>
             </section>
-        </header>
 
-        <main class="main">
             <!-- ОСОБЕННОСТИ -->
 
-            <section class="features">
+            <section class="features section">
                 <div class="container">
                     <h2 class="main-section-titles" hidden>Особенности</h2>
-                    <ul class="list features-list">
+                    <ul class="features-list list flex-wrap">
                         <li class="features-list-item">
-                            <img
-                                src="./images/main-icons/antenna.svg"
-                                alt="Спутниковая антена"
-                            />
+                            <div class="center">
+                                <img
+                                    src="./images/main-icons/antenna.svg"
+                                    width="70px"
+                                    height="70px"
+                                    alt="Спутниковая антена"
+                                />
+                            </div>
                             <h3 class="features-item-title uppercase">
                                 Внимание к деталям
                             </h3>
@@ -116,10 +120,14 @@
                             </p>
                         </li>
                         <li class="features-list-item">
-                            <img
-                                src="./images/main-icons/clock.svg"
-                                alt="Часы"
-                            />
+                            <div class="center">
+                                <img
+                                    src="./images/main-icons/clock.svg"
+                                    width="70px"
+                                    height="70px"
+                                    alt="Часы"
+                                />
+                            </div>
                             <h3 class="features-item-title uppercase">
                                 Пунктуальность
                             </h3>
@@ -129,10 +137,14 @@
                             </p>
                         </li>
                         <li class="features-list-item">
-                            <img
-                                src="./images/main-icons/diagram.svg"
-                                alt="Диаграмма"
-                            />
+                            <div class="center">
+                                <img
+                                    src="./images/main-icons/diagram.svg"
+                                    width="70px"
+                                    height="70px"
+                                    alt="Диаграмма"
+                                />
+                            </div>
                             <h3 class="features-item-title uppercase">
                                 Планирование
                             </h3>
@@ -142,10 +154,14 @@
                             </p>
                         </li>
                         <li class="features-list-item">
-                            <img
-                                src="./images/main-icons/astronaut.svg"
-                                alt="Астронавт"
-                            />
+                            <div class="center">
+                                <img
+                                    src="./images/main-icons/astronaut.svg"
+                                    width="70px"
+                                    height="70px"
+                                    alt="Астронавт"
+                                />
+                            </div>
                             <h3 class="features-item-title uppercase">
                                 Современные технологии
                             </h3>
@@ -160,13 +176,15 @@
 
             <!-- ЧЕМ МЫ ЗАИМАЕМСЯ -->
 
-            <section class="what-we-do">
+            <section class="what-we-do section">
                 <div class="container">
                     <h2 class="main-section-titles">Чем мы занимаемся</h2>
-                    <ul class="list what-we-do-list">
+                    <ul class="list what-we-do-list flex-wrap">
                         <li class="what-we-do-item">
                             <img
                                 src="./images/what-we-do/box-1.png"
+                                width="370px"
+                                height="294px"
                                 alt="Десктопные приложения"
                             />
                             <p class="what-we-do-item-title uppercase">
@@ -176,6 +194,8 @@
                         <li class="what-we-do-item">
                             <img
                                 src="./images/what-we-do/box-2.png"
+                                width="370px"
+                                height="294px"
                                 alt="Мобильные приложения"
                             />
                             <p class="what-we-do-item-title uppercase">
@@ -185,6 +205,8 @@
                         <li class="what-we-do-item">
                             <img
                                 src="./images/what-we-do/box-3.png"
+                                width="370px"
+                                height="294px"
                                 alt="Дизайнерске решения"
                             />
                             <p class="what-we-do-item-title uppercase">
@@ -196,19 +218,21 @@
             </section>
 
             <!--НАША КОМАНДА-->
-            <section class="team">
-                <div class="container">
-                    <h2 class="main-section-titles">Наша команда</h2>
+            <section class="team section">
+                <h2 class="main-section-titles">Наша команда</h2>
+                <div class="container flex-wrap">
                     <div class="team-card">
                         <img
                             src="./images/our-team-img/img-1.jpg"
+                            width="270px"
+                            height="260px"
                             alt="Николай Кучеренко"
                         />
                         <p class="team-card-name">Николай Кучеренко</p>
                         <p class="team-card-profession" lang="en">
                             Product Designer
                         </p>
-                        <ul class="list team-social-links">
+                        <ul class="team-social-links list flex-wrap">
                             <li>
                                 <a
                                     class="team-social-links-item"
@@ -217,6 +241,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/instagram-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Инстаграм"
                                 /></a>
                             </li>
@@ -228,6 +254,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/twitter-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Твитер"
                                 /></a>
                             </li>
@@ -239,6 +267,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/facebook-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Фейсбук"
                                 /></a>
                             </li>
@@ -250,6 +280,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/linkedin-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Линкедин"
                                 /></a>
                             </li>
@@ -258,13 +290,15 @@
                     <div class="team-card">
                         <img
                             src="./images/our-team-img/img-2.jpg"
+                            width="270px"
+                            height="260px"
                             alt="Ольга Ивановоа"
                         />
                         <p class="team-card-name">Ольга Иванова</p>
                         <p class="team-card-profession" lang="en">
                             Frontend Developer
                         </p>
-                        <ul class="list team-social-links">
+                        <ul class="list team-social-links flex-wrap">
                             <li>
                                 <a
                                     class="team-social-links-item"
@@ -273,6 +307,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/instagram-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Инстаграм"
                                 /></a>
                             </li>
@@ -284,6 +320,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/twitter-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Твитер"
                                 /></a>
                             </li>
@@ -295,6 +333,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/facebook-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Фейсбук"
                                 /></a>
                             </li>
@@ -306,6 +346,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/linkedin-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Линкедин"
                                 /></a>
                             </li>
@@ -314,12 +356,14 @@
                     <div class="team-card">
                         <img
                             src="./images/our-team-img/img-3.jpg"
+                            width="270px"
+                            height="260px"
                             alt="Андрей
                                             Шевченко"
                         />
                         <p class="team-card-name">Андрей Шевченко</p>
                         <p class="team-card-profession" lang="en">Marketing</p>
-                        <ul class="list team-social-links">
+                        <ul class="list team-social-links flex-wrap">
                             <li>
                                 <a
                                     class="team-social-links-item"
@@ -328,6 +372,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/instagram-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Инстаграм"
                                 /></a>
                             </li>
@@ -339,6 +385,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/twitter-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Твитер"
                                 /></a>
                             </li>
@@ -350,6 +398,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/facebook-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Фейсбук"
                                 /></a>
                             </li>
@@ -361,6 +411,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/linkedin-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Линкедин"
                                 /></a>
                             </li>
@@ -369,13 +421,15 @@
                     <div class="team-card">
                         <img
                             src="./images/our-team-img/img-4.jpg"
+                            width="270px"
+                            height="260px"
                             alt="Иван Николаев"
                         />
                         <p class="team-card-name">Иван Николаев</p>
                         <p class="team-card-profession" lang="en">
                             UI Designer
                         </p>
-                        <ul class="list team-social-links">
+                        <ul class="list team-social-links flex-wrap">
                             <li>
                                 <a
                                     class="team-social-links-item"
@@ -384,6 +438,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/instagram-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Инстаграм"
                                 /></a>
                             </li>
@@ -395,6 +451,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/twitter-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Твитер"
                                 /></a>
                             </li>
@@ -406,6 +464,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/facebook-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Фейсбук"
                                 /></a>
                             </li>
@@ -417,6 +477,8 @@
                                     target="_blank"
                                     ><img
                                         src="./images/our-team-icons/linkedin-1.svg"
+                                        width="20px"
+                                        height="20px"
                                         alt="Линкедин"
                                 /></a>
                             </li>
@@ -426,67 +488,79 @@
             </section>
 
             <!--ПОСТОЯННЫЕ КЛИЕНТЫ-->
-            <section class="clients">
+            <section class="clients section">
                 <div class="container">
                     <h2 class="main-section-titles">Постоянные клиенты</h2>
-                    <ul class="list clients-list">
-                        <li>
+                    <ul class="clients-list list flex-wrap">
+                        <li class="clients-list-item center">
                             <a
-                                class="clients-list-item"
+                                class="clients-list-item-link"
                                 href=""
                                 aria-label="Ссылка на компанию YA & CO"
                                 ><img
                                     src="./images/our-clients-logo/logo-1.svg"
+                                    width="45px"
+                                    height="50px"
                                     alt="YA & CO"
                             /></a>
                         </li>
-                        <li>
+                        <li class="clients-list-item center">
                             <a
-                                class="clients-list-item"
+                                class="clients-list-item-link"
                                 href=""
                                 aria-label="Ссылка на Tagline here Company"
                                 ><img
                                     src="./images/our-clients-logo/logo-2.svg"
+                                    width="40px"
+                                    height="52px"
                                     alt="Tagline here Company"
                             /></a>
                         </li>
-                        <li>
+                        <li class="clients-list-item center">
                             <a
-                                class="clients-list-item"
+                                class="clients-list-item-link"
                                 href=""
                                 aria-label="Ссылка на Company"
                                 ><img
                                     src="./images/our-clients-logo/logo-3.svg"
+                                    width="41px"
+                                    height="43px"
                                     alt="Company"
                             /></a>
                         </li>
-                        <li>
+                        <li class="clients-list-item center">
                             <a
-                                class="clients-list-item"
+                                class="clients-list-item-link"
                                 href=""
                                 aria-label="Ссылка на Foster Peters"
                                 ><img
                                     src="./images/our-clients-logo/logo-4.svg"
+                                    width="80px"
+                                    height="42px"
                                     alt="Foster Peters"
                             /></a>
                         </li>
-                        <li>
+                        <li class="clients-list-item center">
                             <a
-                                class="clients-list-item"
+                                class="clients-list-item-link"
                                 href=""
                                 aria-label="Ссылка на Brand"
                                 ><img
                                     src="./images/our-clients-logo/logo-5.svg"
+                                    width="59px"
+                                    height="47px"
                                     alt="Brand"
                             /></a>
                         </li>
-                        <li>
+                        <li class="clients-list-item center">
                             <a
-                                class="clients-list-item"
+                                class="clients-list-item-link"
                                 href=""
                                 aria-label="Ссылка на Tag Line Company"
                                 ><img
                                     src="./images/our-clients-logo/logo-6.svg"
+                                    width="89px"
+                                    height="46px"
                                     alt="Tag Line Company"
                             /></a>
                         </li>
@@ -498,16 +572,16 @@
         <!-- ПОДВАЛ -->
 
         <footer class="footer">
-            <section class="footer-section">
+            <section class="container">
                 <a
-                    class="logo link"
+                    class="footer-logo link"
                     href="index.html"
                     aria-label="Ссылка на главную страницу сайта"
                     lang="en"
                     ><span class="accent">Web</span> Studio</a
                 >
                 <address class="footer-address">
-                    <ul class="list">
+                    <ul class="footer-address-list list">
                         <li>
                             <a
                                 class="link footer-address-link"
@@ -535,44 +609,52 @@
 
             <section class="social-links">
                 <p class="social-links-title uppercase">Присоединяйтесь</p>
-                <ul class="list social-links">
-                    <li>
+                <ul class="social-links list">
+                    <li class="social-links-item">
                         <a
-                            class="social-links-item link"
+                            class="social-links-item-link link"
                             href=""
                             aria-label="Ссылка на Инстаграм"
                             ><img
                                 src="./images/footer-icons/instagram-1.svg"
+                                width="20px"
+                                height="20px"
                                 alt="Инстаграм"
                         /></a>
                     </li>
-                    <li>
+                    <li class="social-links-item">
                         <a
-                            class="social-links-item link"
+                            class="social-links-item-link link"
                             href=""
                             aria-label="Ссылка на Твитер"
                             ><img
                                 src="./images/footer-icons/twitter-1.svg"
+                                width="20px"
+                                height="20px"
                                 alt="Твитер"
                         /></a>
                     </li>
-                    <li>
+                    <li class="social-links-item">
                         <a
-                            class="social-links-item link"
+                            class="social-links-item-link link"
                             href=""
                             aria-label="Ссылка на Фейсбук"
                             ><img
                                 src="./images/footer-icons/facebook-1.svg"
+                                width="20px"
+                                height="20px"
                                 alt="Фейсбук"
                         /></a>
                     </li>
-                    <li>
+                    <li class="social-links-item">
                         <a
-                            class="social-links-item link"
+                            class="social-links-item-link link"
                             href=""
                             aria-label="Ссылка на Линкедин"
                             ><img
                                 src="./images/footer-icons/linkedin-1.svg"
+                                width="20px"
+                                height="20px"
                                 alt="Линкедин"
                         /></a>
                     </li>
