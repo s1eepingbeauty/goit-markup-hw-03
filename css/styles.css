@@ -28,7 +28,6 @@ html {
 
 body {
     margin: 0;
-    width: 1600px;
     background-color: var(--title-dark-theme-color);
     font-family: var(--main-font);
     font-size: 14px;
@@ -77,7 +76,9 @@ span {
 
 .container {
     margin: 0 auto;
-    width: 1170px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section {
@@ -85,8 +86,6 @@ span {
     border: 0;
     padding-top: 94px;
     padding-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .center {
@@ -99,7 +98,7 @@ span {
 
 .header {
     height: 80px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 main {
@@ -127,19 +126,15 @@ main {
 }
 
 .navigation-list-item:not(:last-child) {
-    padding-right: 50px;
-}
-
-.navigation-list-item:last-child {
-    padding-right: 305px;
+    margin-right: 50px;
 }
 
 .header-mail {
-    padding-right: 30px;
+    margin-right: 30px;
 }
 
 .header-list img {
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .header-mail-link,
@@ -265,6 +260,10 @@ main {
     padding: 27px;
 }
 
+.what-we-do-item {
+    width: 370px;
+}
+
 /*-----НАША КОМАНДА-----*/
 
 .team div {
@@ -276,6 +275,7 @@ main {
         0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+    width: 270px;
 }
 
 .team-card img {
@@ -333,13 +333,13 @@ footer {
 }
 
 .footer-address {
-    padding-right: 69px;
+    margin-right: 69px;
 }
 .footer-address-list {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 .footer-address-list-item:not(:last-child) {
-    margin-bottom: 9px;
+    padding-bottom: 9px;
 }
 
 .footer-address-link {
