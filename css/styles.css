@@ -323,6 +323,11 @@ main {
     height: 90px;
 }
 
+.clients-list-item:hover,
+.clients-list-item:focus {
+    border: 1px solid var(--accent-color);
+}
+
 /*-----ПОДВАЛ-----*/
 footer {
     background: #2f303a;
@@ -361,13 +366,26 @@ footer {
 
 .social-links {
     justify-content: space-between;
-    padding-top: 12px;
+    padding-top: 10px;
 }
 
 .social-links-title {
     font-weight: 700;
     color: var(--text-light-theme-color);
     padding-bottom: 20px;
+}
+
+.social-links-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+}
+
+.social-links-item:hover,
+.social-links-item:focus {
+    background: var(--accent-color);
 }
 
 .filter-button {
